@@ -21,7 +21,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#food">Category</a></li>
         <li><a href="#food-menu">Menu</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#testimonials">Testimonial</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <h1 class="logo">FW</h1>
@@ -143,5 +143,97 @@
         </div>
       </div>
     </section>
+    <section id="testimonials">
+      <h2 class="testimonial-title">What our customers say</h2>
+      <div class="testimonial-contianer container">
+        <div class="testimonial-box">
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam quam ipsam asperiores qui itaque!</p>
+          <div class="customer-detail">
+            <div class="customer-photo"><img src="./img/male-photo1.jpg" alt=""></div>
+            <p class="customer-name">John Doe</p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam quam ipsam asperiores qui itaque!</p>
+          <div class="customer-detail">
+            <div class="customer-photo"><img src="./img/male-photo2.jpg" alt=""></div>
+            <p class="customer-name">Joy Doe</p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam quam ipsam asperiores qui itaque!</p>
+          <div class="customer-detail">
+            <div class="customer-photo"><img src="./img/male-photo3.jpg" alt=""></div>
+            <p class="customer-name">Jolly Doe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container container">
+        <div class="contact-image">
+          <img src="./img/restraunt-image.jpg" alt="">
+        </div>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2>Food Website &copy; All Rights Reserved.</h2>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </html>
